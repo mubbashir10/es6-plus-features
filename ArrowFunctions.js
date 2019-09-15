@@ -1,7 +1,9 @@
 /**
  * Arrow Functions
- * Description: Arrow functions are syntactic sugar and help you to write clean and concise code for your function.
- * It changes the way functions are declared in JS.
+ * Description: Arrow functions are syntactic sugar
+ * and help you to write clean and concise code for
+ * your function. It changes the way functions are
+ * declared in JS.
  */
 
 // example 1: without params (notice that we are not using the keyword 'function')
@@ -33,4 +35,3 @@ console.log(es6FunctionWithOneParamAndSingleStatement(2)) // should return 4
 console.log(es6FunctionWithMultipleParamAndSingleStatement(2, 3)) // should return 6
 
 // example 5: callbacks
-
