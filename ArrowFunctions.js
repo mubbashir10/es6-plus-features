@@ -34,4 +34,32 @@ const es6FunctionWithMultipleParamAndSingleStatement = (a, b) => a * b
 console.log(es6FunctionWithOneParamAndSingleStatement(2)) // should return 4
 console.log(es6FunctionWithMultipleParamAndSingleStatement(2, 3)) // should return 6
 
-// example 5: callbacks
+/**
+ * Lexical 'this'
+ */
+// 'this' keyword is a reserved word and refers to the current object.
+// in old syntax function definition, 'this' is declared implicitly
+// thus these functions will never check the enclosing scope, whenever
+// 'this' is used inside these functions (because they find it in their own scope!)
+// but Arrow functions do not define their own 'this' implicitly, so they go to
+// the enclosing scope and look for it just as they would with any variable you
+// try to use in their scope.
+
+// ES6 this
+const es6ArrowFunctionWithNoImplicitThis = {
+  name: 'Mubbashir', // in the scope of es6ArrowFunctionWithNoImplicitThis
+  checkThis: () => {
+    return this.name // this here refers to checkThis
+  }
+}
+console.log(es6ArrowFunctionWithNoImplicitThis.checkThis()) // undefined, since ArrowFunctions don't declare 'this' implicitly
+
+// Old Syntax this
+const oldSyntaxFunctionWithImplicitThis = {
+  name: 'Mubbashir', // in the scope of oldSyntaxFunctionWithImplicitThis
+  checkThis: function () {
+    return this.name // this here refers to oldSyntaxFunctionWithImplicitThis (parent)
+  }
+}
+// this will print the checkThis
+console.log(oldSyntaxFunctionWithImplicitThis.checkThis())
