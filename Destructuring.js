@@ -1,7 +1,7 @@
 /**
  * Destructuring
  * Description: Destructuring allows to extract values from
- * Objects & Arrays
+ * Objects & Arrays and assign them to individual variables
  */
 
 // consider an object that contains my basic info
