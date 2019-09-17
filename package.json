@@ -1,0 +1,19 @@
+{
+  "name": "es6-plus-features",
+  "version": "1.0.0",
+  "description": "An comprehensive guide to explain all the cool features in ES6, ES7 and ES8 with easy to understand code examples",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mubbashir10/es6-plus-features.git"
+  },
+  "author": "mubbashir",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mubbashir10/es6-plus-features/issues"
+  },
+  "homepage": "https://github.com/mubbashir10/es6-plus-features#readme"
+}
